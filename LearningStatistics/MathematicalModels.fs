@@ -2,13 +2,13 @@
 open System
 
 module  centralTendency =
-    let VarCalc (Numbers: list<decimal>) =
-        let mean = List.average Numbers
+    let VarCalc (numbers: list<decimal>) =
+        let mean = List.average numbers
         let   pow(a:decimal, d:decimal) = decimal (float a ** float d)
         
-        let deviationFromMean = List.sumBy (fun x->  pow((x-mean),2m)) Numbers
+        let deviationFromMean = List.sumBy (fun x->  pow((x-mean),2m)) numbers
         
-        deviationFromMean/ (decimal Numbers.Length - 1m)
+        deviationFromMean/ (decimal numbers.Length - 1m)
         
 
     let StdCalc (nums: list<decimal>) = 

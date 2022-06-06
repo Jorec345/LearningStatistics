@@ -27,6 +27,3 @@ module MeasureOfCentralTendency =
         let expectedKurtosis =  0.511m
         let actualKurt =  LearningStatistics.centralTendency.kurtosis input
         Assert.Equal(expectedKurtosis,Math.Round(actualKurt,3))
-
-module robustness =
-    let 
