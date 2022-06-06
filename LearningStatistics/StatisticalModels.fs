@@ -20,4 +20,13 @@ module MultiplicativeModels =
         a * b *c
     
 //create one modules and 3 tests for them. give each a model e.g average, variance,standard deviation
-    
+
+module functionValues =
+
+    let Add (transform : int -> int ) z = transform z   // a function that takes in a function. it takes in an interger and returns an integer
+    let increment x = x + 1
+    let result = Add increment 100 
+
+
+//Lamda expressions
+    let Add1 = Add (fun x -> x + 1)100
