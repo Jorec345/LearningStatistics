@@ -30,4 +30,4 @@ module functionValues =
 
 //Lamda expressions
     let Add1 = Add (fun x -> x + 1)100
-    
+  
